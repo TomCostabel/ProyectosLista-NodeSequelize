@@ -1,0 +1,49 @@
+.name-task {
+    font-size: 10.6px;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    width: 350px;
+}
+.Check-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 56px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    margin-top: 15px;
+}
+.Check-button:hover {
+    color: rgb(115, 209, 27);
+}
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-task-DONE {
+    font-size: 10.6px;
+    margin-left: 5px;
+    width: 350px;
+
+    text-decoration: line-through;
+    color: rgb(247, 11, 11);
+}
+.uncheck-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 56px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    margin-top: 15px;
+}
+.uncheck-button:hover {
+    color: rgb(255, 0, 0);
+}
