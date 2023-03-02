@@ -1,6 +1,5 @@
 import app from "./app.js";
 import { sequelize } from "./database/database.js";
-import * as dotenv from "dotenv";
 
 const { DB_PORT } = process.env;
 
