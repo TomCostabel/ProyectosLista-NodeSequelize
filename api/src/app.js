@@ -3,7 +3,7 @@ import projectsRoutes from "./routes/projects.routes.js";
 import tasksRoutes from "./routes/tasks.routes.js";
 import cors from "cors";
 const corsOptions = {
-    origin: "https://proyectos-lista-node-sequelize.vercel.app",
+    origin: "http://localhost:3000",
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
 };
