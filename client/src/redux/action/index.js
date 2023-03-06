@@ -7,7 +7,7 @@ export const LOAD_ARTICLES = "LOAD_ARTICLES";
 export function getAllProjects() {
     return async function (dispatch) {
         try {
-            let res = await axios.get("http://localhost:3001/projects");
+            let res = await axios.get("projects");
             // console.log("desde action", res.data);
             dispatch({
                 type: GET_ALL_PROJECTS,
