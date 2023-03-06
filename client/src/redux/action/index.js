@@ -21,7 +21,7 @@ export function getAllProjects() {
 export function getAllTasks() {
     return async function (dispatch) {
         try {
-            let res = await axios.get("http://localhost:3001/tasks");
+            let res = await axios.get("tasks");
             dispatch({
                 type: GET_ALL_TASKS,
                 payload: res.data,
@@ -33,38 +33,29 @@ export function getAllTasks() {
 }
 export function deleteTask(id) {
     return async () => {
-        await axios.delete(`http://localhost:3001/tasks/${id}`);
+        await axios.delete(`tasks/${id}`);
     };
 }
 export function createTask(payload) {
     return async function () {
-        const response = await axios.post(
-            "http://localhost:3001/tasks",
-            payload
-        );
+        const response = await axios.post("tasks", payload);
         return response;
     };
 }
 export function updateTask(id, done) {
     return async () => {
-        const response = await axios.put(
-            `http://localhost:3001/tasks/${id}`,
-            done
-        );
+        const response = await axios.put(`tasks/${id}`, done);
         return response;
     };
 }
 export function AddProject(payload) {
     return async () => {
-        const response = await axios.post(
-            "http://localhost:3001/projects",
-            payload
-        );
+        const response = await axios.post("projects", payload);
         return response;
     };
 }
 export function deleteProject(id) {
     return async () => {
-        await axios.delete(`http://localhost:3001/projects/${id}`);
+        await axios.delete(`projects/${id}`);
     };
 }

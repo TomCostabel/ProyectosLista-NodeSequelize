@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import Tasks from "./components/Tasks/Tasks";
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
 
 function App() {
     return (
